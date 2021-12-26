@@ -78,8 +78,8 @@ int print_winner(int player_id, char board[][BOARD_MAX_SIZE], int r, int c);
 //--------------------------- Main Program -------------------------------//
 int main()
 {   //function length: 8 rows
-    char moves[BOARD_MAX_SIZE*BOARD_MAX_SIZE][BOARD_MAX_SIZE][BOARD_MAX_SIZE];
     char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE];
+    char moves[BOARD_MAX_SIZE * BOARD_MAX_SIZE][BOARD_MAX_SIZE][BOARD_MAX_SIZE];
     char inputs[NUM_OF_INIT_INPUTS];
     if (game_init(board, inputs, moves)) {
         return 1;   //if scanf failed

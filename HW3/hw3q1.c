@@ -16,8 +16,6 @@
 #define TOKEN_INDEX 3
 
 //----------------------- Game Identifiers ----------------------------//
-#define RED 0
-#define YELLOW 1
 #define TIE -1
 
 //----------------------- Symbol Identifiers ---------------------------//
@@ -48,9 +46,14 @@ void board_init(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int column
 
 //Game Functions
 int game_manager(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], char inputs[NUM_OF_INIT_INPUTS]);
-bool game_input_manager(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], char inputs[NUM_OF_INIT_INPUTS], int in, bool* pplayer);
-int add_to_board(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int req_column, bool player);
-int is_endOfGame();
+void game_input_manager(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], char inputs[NUM_OF_INIT_INPUTS], int in, bool* pplayer, bool* shouldPrint);
+int add_to_board(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int req_column, bool player, char player1);
+int is_endOfGame(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int tokens, char player1);
+void is_row_winner(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int tokens, char* player1, char* player2, int* winner);
+void is_column_winner(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int tokens, char* player1, char* player2, int* winner);
+void is_up_diag_winner(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int tokens, char* player1, char* player2, int* winner);
+void is_down_diag_winner(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int tokens, char* player1, char* player2, int* winner);
+int is_full(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int* winner);
 
 //Print Functions
 void print_welcome_message();
@@ -62,7 +65,7 @@ void print_enter_column_message();
 void print_full_column_message();
 void print_unavailable_undo_redo_message();
 void print_board(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int r, int c);
-int print_winner(int player_id);
+int print_winner(int player_id, char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int r, int c);
 
 
 //--------------------------- Main Program -------------------------------//
@@ -73,7 +76,6 @@ int main()
     if (game_init(board, inputs)) {
         return 1;   //if scanf failed
     }
-    //print_board(board, inputs[ROW_INDEX], inputs[COLUMN_INDEX]);
     if (game_manager(board, inputs)) {
         return 1; //if scanf failed
     }
@@ -83,6 +85,7 @@ int main()
 //--------------------------- Init Functions -----------------------------//
 
 //getting the necessary inputs from the user in order to initialize the game, and then initializing the game board
+//returns 1 if scanf failed and 0 if ok
 int game_init(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], char inputs[NUM_OF_INIT_INPUTS])
 {   //function length: 11 rows
     print_welcome_message();
@@ -110,7 +113,7 @@ char get_color()
         if (scanf(" %c", &color) != 1) {
             return 0;
         }
-    } while (color != 'Y' && color != 'R');
+    } while (color != YELLOW_SLOT_SYMBOL && color != RED_SLOT_SYMBOL);
     return color;
 }
 
@@ -158,16 +161,18 @@ void board_init(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int column
 {   //function length: 3 rows
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < columns; j++) {
-            board[i][j] = ' ';
+            board[i][j] = EMPTY_SLOT_SYMBOL;
         }
     }
 }
 
 //------------------------ Game Functions ------------------------------//
 
+//everything related to game management - takes control after init
+//returns 1 if scanf failed and 0 if ok
 int game_manager(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], char inputs[NUM_OF_INIT_INPUTS])
-{
-    bool player = inputs[COLOR_INDEX] == 'R' ? RED : YELLOW, shouldPrint = true;
+{   //function length: 
+    bool player = false, shouldPrint = true;
     int in;
     do {
         if (shouldPrint) {
@@ -176,37 +181,40 @@ int game_manager(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], char inputs[NUM_OF_
         if (scanf(" %d", &in) != 1) {
             return 1;
         }
-        shouldPrint = game_input_manager(board, inputs, in, &player);
-    } while (!is_endOfGame(board, inputs[ROW_INDEX], inputs[COLUMN_INDEX], inputs[TOKEN_INDEX]));
+        shouldPrint = false;
+        game_input_manager(board, inputs, in, &player, &shouldPrint);
+    } while (!is_endOfGame(board, inputs[ROW_INDEX], inputs[COLUMN_INDEX], inputs[TOKEN_INDEX], inputs[COLOR_INDEX]));
     return 0;
 }
 
-bool game_input_manager(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], char inputs[NUM_OF_INIT_INPUTS], int in, bool *pplayer) 
-{
-    if (in > 0 && in <= inputs[COLUMN_INDEX]) {
-        if (add_to_board(board, inputs[ROW_INDEX], inputs[COLUMN_INDEX], in, *pplayer)) {
+//getting inputs from users and updating the game if needed
+void game_input_manager(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], char inputs[NUM_OF_INIT_INPUTS], int in, bool *pplayer, bool *shouldPrint) 
+{   //function length:
+    if (in > 0 && in <= inputs[COLUMN_INDEX]) {     //checking if the column input in an actual column
+        if (add_to_board(board, inputs[ROW_INDEX], inputs[COLUMN_INDEX], in, *pplayer, inputs[COLOR_INDEX])) {
             print_full_column_message();
             print_enter_column_message();
-            return false;
+            return;
         }
-        *pplayer = !*pplayer;
-        return true;
+        *pplayer = !*pplayer;   //changing which player's turn it is
+        *shouldPrint = true;
+        return;
     }
     switch (in) {
-     //   case -1: undo(); break;
-     //   case -2: redo(); break;
-        default: print_enter_column_message(); break;
+        //   case -1: undo(); break;
+        //   case -2: redo(); break;
+    default: print_enter_column_message(); break;
     }
-    return false;
 }
 
-
-int add_to_board(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int req_column, bool player)
-{
-    char add;
-    add = player ? 'Y' : 'R';
+//adding to the game board as requested by user
+//returns 1 if column is full, 0 if added
+int add_to_board(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int req_column, bool player, char player1)
+{//function length: 
+    char player2 = player1 == RED_SLOT_SYMBOL ? YELLOW_SLOT_SYMBOL : RED_SLOT_SYMBOL;
+    char add = player ? player2 : player1;
     for (int i = rows-1; i >= 0; i--) {
-        if (board[i][req_column - 1] == ' ') {
+        if (board[i][req_column - 1] == EMPTY_SLOT_SYMBOL) {
             board[i][req_column - 1] = add;
             return 0;
         }
@@ -214,115 +222,136 @@ int add_to_board(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int colum
     return 1;
 }
 
-int is_endOfGame(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int tokens)
-{
-    /*
-    int r_winner = is_row_winner(board, rows, columns, tokens); 
-    int c_winner = is_column_winner(board, rows, columns, tokens);
-    int d_winner = is_upward_diagonal_winner(board, rows, columns, tokens) + is_downward_diagonal_winner(board, rows, columns, tokens);
-    if (r_winner) {
-        print_board(board, rows, columns);
-        return print_winner(r_winner);
-    }
-    if (c_winner) {
-        print_board(board, rows, columns);
-        return print_winner(c_winner);
-    }
-    if (d_winner) {
-        print_board(board, rows, columns);
-        return print_winner(d_winner);
-    }
-    */
-    if (is_full(board, rows, columns)) {
-        print_board(board, rows, columns);
-        return print_winner(TIE);
-    }
-    return 0;
+//checking if the game has ended
+//returns 1 if ended, 0 if not
+int is_endOfGame(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int tokens, char player1)
+{//function length:
+    char player2 = player1 == RED_SLOT_SYMBOL ? YELLOW_SLOT_SYMBOL : RED_SLOT_SYMBOL;
+    int winner=0;
+    is_row_winner(board, rows, columns, tokens, &player1, &player2, &winner);
+    is_column_winner(board, rows, columns, tokens, &player1, &player2, &winner);
+    is_up_diag_winner(board, rows, columns, tokens, &player1, &player2, &winner);
+    is_down_diag_winner(board, rows, columns, tokens, &player1, &player2, &winner);
+    if (winner != 0)
+        return print_winner(winner, board, rows, columns);
+    is_full(board, rows, columns, &winner);
+    return print_winner(winner, board, rows, columns);
 }
 
-/*
-int is_row_winner(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int tokens)
-{
-    int counter = 0;
-    char last_char = 'Z';
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < columns && counter < tokens; j++) {
-            if ((last_char == 'Z' || board[i][j] == last_char) && board[i][j] != ' ') {
-                counter++;
-            }
-            else {
-                counter = 0;
-            }
-            last_char = board[i][j];
-        }
-        if (counter == tokens) {
-            if (last_char == 'R') {
-                return RED;
-            }
-            else
-                return YELLOW;
-        }
-        counter = 0;
-        last_char = 'Z';
-    }
-    return 0;
-}
-
-int is_column_winner(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int tokens)
-{
-    int counter = 0;
-    char last_char = 'Z';
-    for (int j = 0; j < columns; j++) {
-        for (int i = 0; i < rows && counter < tokens; i++) {
-            if ((last_char == 'Z' || board[i][j] == last_char) && board[i][j] != ' ') {
-                counter++;
-            }
-            else {
-                counter = 0;
-            }
-            last_char = board[i][j];
-        }
-        if (counter == tokens) {
-            if (last_char == 'R') {
-                return RED;
-            }
-            if (last_char == 'Y') {
-                return YELLOW;
-            }
-        }
-        counter = 0;
-        last_char = 'Z';
-    }
-    return 0;
-}
-int is_upward_diagonal_winner(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int tokens)
-{
-    int counter = 0, r_ini = rows - 1, j = columns - tokens, i;
-    char last_char = 'Z';
-    do
-    {
-        i = r_ini;
-        do {
-            if(last_char=='Z')
-        }while()
-    } while ();
-    
-}
-
-int is_downward_diagonal_winner(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int tokens)
-{
-
-}
-*/
-int is_full(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns)
-{
+//checking if the game has ended due to a row-sequence
+void is_row_winner(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int tokens, char* player1, char *player2, int* winner)
+{//function length: 
+    int count = 0;
+    char prev = EMPTY_SLOT_SYMBOL;
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < columns; j++) {
-            if (board[i][j] == ' ') {
+            if ((prev == EMPTY_SLOT_SYMBOL || prev == board[i][j]) && (board[i][j] == *player1 || board[i][j] == *player2)) {
+                count++;
+            }
+            else {
+                count = 0;
+            }
+            prev = board[i][j];
+            if (count == tokens) {
+                *winner = board[i][j] == *player1 ? 1 : 2;
+                return;
+            }
+        }
+        count = 0;
+        prev = EMPTY_SLOT_SYMBOL;
+    }
+}
+
+//checking if the game has ended due to a column-sequence
+void is_column_winner(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int tokens, char* player1, char* player2, int* winner)
+{//function length: 
+    int count = 0;
+    char prev = EMPTY_SLOT_SYMBOL;
+    for (int j = 0; j < columns; j++) {
+        for (int i = 0; i < rows; i++) {
+            if ((prev == EMPTY_SLOT_SYMBOL || prev == board[i][j]) && (board[i][j] == *player1 || board[i][j] == *player2)) {
+                count++;
+            }
+            else {
+                count = 0;
+            }
+            prev = board[i][j];
+            if (count == tokens) {
+                *winner = board[i][j] == *player1 ? 1 : 2;
+                return;
+            }
+        }
+        count = 0;
+        prev = EMPTY_SLOT_SYMBOL;
+    }
+}
+
+//checking if the game has ended due to an upward-digonal-sequence
+void is_up_diag_winner(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int tokens, char* player1, char* player2, int* winner)
+{//function length: 
+    int count = 0;
+    char prev = EMPTY_SLOT_SYMBOL;
+    for (int d = 0; d <= columns+rows-2; d++) {
+        for (int i = 0; i <= d&&i<rows; i++) {
+            if (i + columns <= d) {
+                continue;
+            }
+            if ((prev == EMPTY_SLOT_SYMBOL || prev == board[i][d-i]) && (board[i][d-i] == *player1 || board[i][d-i] == *player2)) {
+                count++;
+            }
+            else {
+                count = 0;
+            }
+            prev = board[i][d-i];
+            if (count == tokens) {
+                *winner = board[i][d-i] == *player1 ? 1 : 2;
+                return;
+            }
+        }
+        count = 0;
+        prev = EMPTY_SLOT_SYMBOL;
+    }
+}
+
+//checking if the game has ended due to a downward-diagonal-sequence
+void is_down_diag_winner(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int tokens, char* player1, char* player2, int* winner)
+{//function length:
+    int count = 0;
+    char prev = EMPTY_SLOT_SYMBOL;
+    for (int d = -columns+1; d < rows; d++) {
+        for (int i = 0; i < d+columns && i < rows; i++) {
+            if (i < d) {
+                continue;
+            }
+            if ((prev == EMPTY_SLOT_SYMBOL || prev == board[i][i-d]) && (board[i][i-d] == *player1 || board[i][i-d] == *player2)) {
+                count++;
+            }
+            else {
+                count = 0;
+            }
+            prev = board[i][i-d];
+            if (count == tokens) {
+                *winner = board[i][i-d] == *player1 ? 1 : 2;
+                return;
+            }
+        }
+        count = 0;
+        prev = EMPTY_SLOT_SYMBOL;
+    }
+}
+
+//checking if the board is full
+//returns 1 if full, 0 if not
+int is_full(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int rows, int columns, int *winner)
+{//function length:
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            if (board[i][j] == EMPTY_SLOT_SYMBOL) {
                 return 0;
             }
         }
     }
+    *winner = TIE;
     return 1;
 }
 
@@ -399,12 +428,14 @@ void print_board(char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int r, int c)
     printf("%c%c\n", BOARD_BOTTOM, BOARD_RIGHT_ANG);
 }
 
-//Outputs winner or tie message
-int print_winner(int player_id)
-{   //function length: 3 rows
+//Outputs winner or tie message, with game board
+//returns 1 if the game has ended, 0 if not
+int print_winner(int player_id, char board[BOARD_MAX_SIZE][BOARD_MAX_SIZE], int r, int c)
+{   //function length: 7 rows
     if(player_id==0){
         return 0;
     }
+    print_board(board, r, c);
     if (player_id > 0)
         printf("Player %d won! \n", player_id);
     else

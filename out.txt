@@ -1,5 +1,5 @@
 Welcome to 4-in-a-row game! 
-Please choose starting color (Y)ellow or (R)ed: Please choose starting color (Y)ellow or (R)ed: Please choose starting color (Y)ellow or (R)ed: Please enter number of rows: Please enter number of columns: Please enter number of columns: Please enter number of tokens: Please enter number of tokens: 
+Please choose starting color (Y)ellow or (R)ed: Please enter number of rows: Please enter number of columns: Please enter number of columns: Please enter number of columns: Please enter number of columns: Please enter number of columns: Please enter number of columns: Please enter number of columns: Please enter number of columns: Please enter number of columns: Please enter number of columns: Please enter number of columns: Please enter number of columns: Please enter number of columns: Please enter number of tokens: Please enter number of tokens: Please enter number of tokens: Please enter number of tokens: Please enter number of tokens: 
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
@@ -8,26 +8,7 @@ Please choose starting color (Y)ellow or (R)ed: Please choose starting color (Y)
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
-\-----------------/
-Your move, player 1. Please enter column: No moves to undo/redo. Please enter column: No moves to undo/redo. Please enter column: 
 | | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-|Y| | | | | | | | |
-\-----------------/
-Your move, player 2. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-|Y| |R| | | | | | |
 \-----------------/
 Your move, player 1. Please enter column: 
 | | | | | | | | | |
@@ -37,7 +18,8 @@ Your move, player 1. Please enter column:
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
-|Y| |R|Y| | | | | |
+| | | | | | | | | |
+| |Y| | | | | | | |
 \-----------------/
 Your move, player 2. Please enter column: 
 | | | | | | | | | |
@@ -47,7 +29,8 @@ Your move, player 2. Please enter column:
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
-|Y| |R|Y|R| | | | |
+| | | | | | | | | |
+| |Y| | | | | |R| |
 \-----------------/
 Your move, player 1. Please enter column: 
 | | | | | | | | | |
@@ -57,7 +40,8 @@ Your move, player 1. Please enter column:
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
-|Y| |R|Y|R|Y| | | |
+| |Y| | | | | | | |
+| |Y| | | | | |R| |
 \-----------------/
 Your move, player 2. Please enter column: 
 | | | | | | | | | |
@@ -66,108 +50,9 @@ Your move, player 2. Please enter column:
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
-| | | | | |R| | | |
-|Y| |R|Y|R|Y| | | |
-\-----------------/
-Your move, player 1. Please enter column: 
 | | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | |R| | | |
-|Y| |R|Y|R|Y|Y| | |
-\-----------------/
-Your move, player 2. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | |R|R| | |
-|Y| |R|Y|R|Y|Y| | |
-\-----------------/
-Your move, player 1. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | |R|R| | |
-|Y| |R|Y|R|Y|Y|Y| |
-\-----------------/
-Your move, player 2. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | |R|R|R| |
-|Y| |R|Y|R|Y|Y|Y| |
-\-----------------/
-Your move, player 1. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | |R|R|R| |
-|Y| |R|Y|R|Y|Y|Y|Y|
-\-----------------/
-Your move, player 2. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | |R|R|R| |
-|Y| |R|Y|R|Y|Y|Y| |
-\-----------------/
-Your move, player 1. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | |R|R| | |
-|Y| |R|Y|R|Y|Y|Y| |
-\-----------------/
-Your move, player 2. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | |R|R| | |
-|Y| |R|Y|R|Y|Y| | |
-\-----------------/
-Your move, player 1. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | |R| | | |
-|Y| |R|Y|R|Y|Y| | |
-\-----------------/
-Your move, player 2. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | |R| | | |
-|Y| |R|Y|R|Y| | | |
+| |Y| | | | | |R| |
+| |Y| | | | | |R| |
 \-----------------/
 Your move, player 1. Please enter column: 
 | | | | | | | | | |
@@ -177,7 +62,8 @@ Your move, player 1. Please enter column:
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
-|Y| |R|Y|R|Y| | | |
+| |Y| | | | | |R| |
+| |Y| | | | |Y|R| |
 \-----------------/
 Your move, player 2. Please enter column: 
 | | | | | | | | | |
@@ -187,7 +73,8 @@ Your move, player 2. Please enter column:
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
-|Y| |R|Y|R| | | | |
+| |Y| | | | | |R| |
+| |Y| | | | |Y|R|R|
 \-----------------/
 Your move, player 1. Please enter column: 
 | | | | | | | | | |
@@ -196,8 +83,9 @@ Your move, player 1. Please enter column:
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
-| | | | | | | | | |
-|Y| |R|Y| | | | | |
+| | | | | | | |Y| |
+| |Y| | | | | |R| |
+| |Y| | | | |Y|R|R|
 \-----------------/
 Your move, player 2. Please enter column: 
 | | | | | | | | | |
@@ -206,8 +94,9 @@ Your move, player 2. Please enter column:
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
-| | | | | | | | | |
-|Y| |R| | | | | | |
+| | | | | | | |Y| |
+| |Y| | | | | |R| |
+| |Y| | |R| |Y|R|R|
 \-----------------/
 Your move, player 1. Please enter column: 
 | | | | | | | | | |
@@ -216,8 +105,9 @@ Your move, player 1. Please enter column:
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
-| | | | | | | | | |
-|Y| | | | | | | | |
+| | | | | | | |Y| |
+| |Y| | | | | |R| |
+| |Y|Y| |R| |Y|R|R|
 \-----------------/
 Your move, player 2. Please enter column: 
 | | | | | | | | | |
@@ -226,28 +116,9 @@ Your move, player 2. Please enter column:
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-\-----------------/
-Your move, player 1. Please enter column: No moves to undo/redo. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-|Y| | | | | | | | |
-\-----------------/
-Your move, player 2. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-|Y| |R| | | | | | |
+| | | | | | | |Y| |
+| |Y| | | | | |R| |
+| |Y|Y|R|R| |Y|R|R|
 \-----------------/
 Your move, player 1. Please enter column: 
 | | | | | | | | | |
@@ -256,8 +127,9 @@ Your move, player 1. Please enter column:
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
-| | | | | | | | | |
-|Y| |R|Y| | | | | |
+| | | | | | | |Y| |
+| |Y| |Y| | | |R| |
+| |Y|Y|R|R| |Y|R|R|
 \-----------------/
 Your move, player 2. Please enter column: 
 | | | | | | | | | |
@@ -265,9 +137,10 @@ Your move, player 2. Please enter column:
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-|Y| |R|Y|R| | | | |
+| | | | | | | |R| |
+| | | | | | | |Y| |
+| |Y| |Y| | | |R| |
+| |Y|Y|R|R| |Y|R|R|
 \-----------------/
 Your move, player 1. Please enter column: 
 | | | | | | | | | |
@@ -275,9 +148,10 @@ Your move, player 1. Please enter column:
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-|Y| |R|Y|R|Y| | | |
+| | | | | | | |R| |
+| | | | | | | |Y| |
+| |Y| |Y| | |Y|R| |
+| |Y|Y|R|R| |Y|R|R|
 \-----------------/
 Your move, player 2. Please enter column: 
 | | | | | | | | | |
@@ -285,9 +159,10 @@ Your move, player 2. Please enter column:
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
-| | | | | | | | | |
-| | | | | |R| | | |
-|Y| |R|Y|R|Y| | | |
+| | | | | | | |R| |
+| | | | | | | |Y| |
+| |Y|R|Y| | |Y|R| |
+| |Y|Y|R|R| |Y|R|R|
 \-----------------/
 Your move, player 1. Please enter column: 
 | | | | | | | | | |
@@ -295,238 +170,823 @@ Your move, player 1. Please enter column:
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
-| | | | | | | | | |
-| | | | | |R| | | |
-|Y| |R|Y|R|Y|Y| | |
+| | | | | | | |R| |
+| | | | | | | |Y| |
+| |Y|R|Y| | |Y|R| |
+|Y|Y|Y|R|R| |Y|R|R|
 \-----------------/
 Your move, player 2. Please enter column: 
 | | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | |R|R| | |
-|Y| |R|Y|R|Y|Y| | |
-\-----------------/
-Your move, player 1. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | |R|R| | |
-|Y| |R|Y|R|Y|Y|Y| |
-\-----------------/
-Your move, player 2. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | |R|R|R| |
-|Y| |R|Y|R|Y|Y|Y| |
-\-----------------/
-Your move, player 1. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | |R|R|R| |
-|Y| |R|Y|R|Y|Y|Y|Y|
-\-----------------/
-Your move, player 2. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-|R| | | | |R|R|R| |
-|Y| |R|Y|R|Y|Y|Y|Y|
-\-----------------/
-Your move, player 1. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-|R| | | | |R|R|R| |
-|Y|Y|R|Y|R|Y|Y|Y|Y|
-\-----------------/
-Your move, player 2. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-|R| |R| | |R|R|R| |
-|Y|Y|R|Y|R|Y|Y|Y|Y|
-\-----------------/
-Your move, player 1. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-|R| | | | |R|R|R| |
-|Y|Y|R|Y|R|Y|Y|Y|Y|
-\-----------------/
-Your move, player 2. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-|R| | | | |R|R|R| |
-|Y| |R|Y|R|Y|Y|Y|Y|
-\-----------------/
-Your move, player 1. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | |R|R|R| |
-|Y| |R|Y|R|Y|Y|Y|Y|
-\-----------------/
-Your move, player 2. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-|R| | | | |R|R|R| |
-|Y| |R|Y|R|Y|Y|Y|Y|
-\-----------------/
-Your move, player 1. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-|R| | | | |R|R|R| |
-|Y|Y|R|Y|R|Y|Y|Y|Y|
-\-----------------/
-Your move, player 2. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-|R| |R| | |R|R|R| |
-|Y|Y|R|Y|R|Y|Y|Y|Y|
-\-----------------/
-Your move, player 1. Please enter column: No moves to undo/redo. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | |Y| | |
-|R| |R| | |R|R|R| |
-|Y|Y|R|Y|R|Y|Y|Y|Y|
-\-----------------/
-Your move, player 2. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-|R| |R| | |R|R|R| |
-|Y|Y|R|Y|R|Y|Y|Y|Y|
-\-----------------/
-Your move, player 1. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-|R| |R| |Y|R|R|R| |
-|Y|Y|R|Y|R|Y|Y|Y|Y|
-\-----------------/
-Your move, player 2. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | |R| | |
-|R| |R| |Y|R|R|R| |
-|Y|Y|R|Y|R|Y|Y|Y|Y|
-\-----------------/
-Your move, player 1. Please enter column: 
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | |R|Y| |
-|R| |R| |Y|R|R|R| |
-|Y|Y|R|Y|R|Y|Y|Y|Y|
-\-----------------/
-Your move, player 2. Please enter column: 
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | |R| |
 | | | | | | |R|Y| |
-|R| |R| |Y|R|R|R| |
-|Y|Y|R|Y|R|Y|Y|Y|Y|
+| |Y|R|Y| | |Y|R| |
+|Y|Y|Y|R|R| |Y|R|R|
 \-----------------/
 Your move, player 1. Please enter column: 
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
+| | | | | | | |Y| |
 | | | | | | | |R| |
 | | | | | | |R|Y| |
-|R| |R| |Y|R|R|R|Y|
-|Y|Y|R|Y|R|Y|Y|Y|Y|
+| |Y|R|Y| | |Y|R| |
+|Y|Y|Y|R|R| |Y|R|R|
 \-----------------/
 Your move, player 2. Please enter column: 
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
+| | | | | | | |Y| |
 | | | | | | | |R| |
-| | | | | | |R|Y|R|
-|R| |R| |Y|R|R|R|Y|
-|Y|Y|R|Y|R|Y|Y|Y|Y|
+| |R| | | | |R|Y| |
+| |Y|R|Y| | |Y|R| |
+|Y|Y|Y|R|R| |Y|R|R|
 \-----------------/
 Your move, player 1. Please enter column: 
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
-| | | | | | | |R|Y|
-| | | | | | |R|Y|R|
-|R| |R| |Y|R|R|R|Y|
-|Y|Y|R|Y|R|Y|Y|Y|Y|
+| | | | | | | |Y| |
+| | | | | | | |R| |
+| |R|Y| | | |R|Y| |
+| |Y|R|Y| | |Y|R| |
+|Y|Y|Y|R|R| |Y|R|R|
 \-----------------/
-Your move, player 2. Please enter column: Please enter column: 
+Your move, player 2. Please enter column: 
 | | | | | | | | | |
 | | | | | | | | | |
 | | | | | | | | | |
-| | | | | | | | |R|
-| | | | | | | |R|Y|
-| | | | | | |R|Y|R|
-|R| |R| |Y|R|R|R|Y|
-|Y|Y|R|Y|R|Y|Y|Y|Y|
+| | | | | | | | | |
+| | | | | | | |Y| |
+| | | | | | | |R| |
+| |R|Y| | | |R|Y| |
+| |Y|R|Y|R| |Y|R| |
+|Y|Y|Y|R|R| |Y|R|R|
 \-----------------/
-Player 2 won! 
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | |Y| |
+| |Y| | | | | |R| |
+| |R|Y| | | |R|Y| |
+| |Y|R|Y|R| |Y|R| |
+|Y|Y|Y|R|R| |Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | |Y| |
+| |Y| | | | | |R| |
+| |R|Y| | | |R|Y| |
+| |Y|R|Y|R| |Y|R| |
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | |Y| |
+| |Y| | | | | |R| |
+| |R|Y| | | |R|Y| |
+| |Y|R|Y|R|Y|Y|R| |
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | |Y| |
+| |Y| | | | | |R| |
+| |R|Y| | |R|R|Y| |
+| |Y|R|Y|R|Y|Y|R| |
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | |Y| |
+| |Y| | | | |Y|R| |
+| |R|Y| | |R|R|Y| |
+| |Y|R|Y|R|Y|Y|R| |
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | |Y| |
+| |Y| | | | |Y|R| |
+| |R|Y| | |R|R|Y| |
+| |Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | |Y| |
+| |Y| | | | |Y|R| |
+| |R|Y| | |R|R|Y| |
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | |Y| |
+| |Y|R| | | |Y|R| |
+| |R|Y| | |R|R|Y| |
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| |Y| | | | | |Y| |
+| |Y|R| | | |Y|R| |
+| |R|Y| | |R|R|Y| |
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| |Y| | | | | |Y| |
+| |Y|R| | | |Y|R| |
+| |R|Y|R| |R|R|Y| |
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| |Y| | | | | |Y| |
+| |Y|R| | |Y|Y|R| |
+| |R|Y|R| |R|R|Y| |
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| |Y| | | | | |Y| |
+| |Y|R| | |Y|Y|R| |
+| |R|Y|R| |R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| |Y| | | | | |Y| |
+| |Y|R| | |Y|Y|R| |
+|Y|R|Y|R| |R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| |R| | | | | | | |
+| |Y| | | | | |Y| |
+| |Y|R| | |Y|Y|R| |
+|Y|R|Y|R| |R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| |R| | | | | | | |
+| |Y|Y| | | | |Y| |
+| |Y|R| | |Y|Y|R| |
+|Y|R|Y|R| |R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| |R| | | | | | | |
+| |Y|Y| | |R| |Y| |
+| |Y|R| | |Y|Y|R| |
+|Y|R|Y|R| |R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| |R| | | | | | | |
+| |Y|Y| | |R| |Y| |
+| |Y|R| | |Y|Y|R| |
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| |R| | | | | | | |
+| |Y|Y| | |R|R|Y| |
+| |Y|R| | |Y|Y|R| |
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| |R| | | | | | | |
+| |Y|Y| | |R|R|Y| |
+|Y|Y|R| | |Y|Y|R| |
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| |R| | | | | | | |
+| |Y|Y| | |R|R|Y| |
+|Y|Y|R| |R|Y|Y|R| |
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| |R| | | | | | | |
+|Y|Y|Y| | |R|R|Y| |
+|Y|Y|R| |R|Y|Y|R| |
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| |R|R| | | | | | |
+|Y|Y|Y| | |R|R|Y| |
+|Y|Y|R| |R|Y|Y|R| |
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| |R|R| | |Y| | | |
+|Y|Y|Y| | |R|R|Y| |
+|Y|Y|R| |R|Y|Y|R| |
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| |R|R| | |Y| | | |
+|Y|Y|Y| | |R|R|Y| |
+|Y|Y|R| |R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| |R|R| | |Y| |Y| |
+|Y|Y|Y| | |R|R|Y| |
+|Y|Y|R| |R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| |R|R| | |Y| |Y| |
+|Y|Y|Y| |R|R|R|Y| |
+|Y|Y|R| |R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+| |R|R| | |Y| |Y| |
+|Y|Y|Y| |R|R|R|Y| |
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+| | | | | | | | | |
+|R|R|R| | |Y| |Y| |
+|Y|Y|Y| |R|R|R|Y| |
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+|Y| | | | | | | | |
+|R|R|R| | |Y| |Y| |
+|Y|Y|Y| |R|R|R|Y| |
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+|Y| | | | | | | | |
+|R|R|R| | |Y| |Y| |
+|Y|Y|Y| |R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+|Y| | | | | | |Y| |
+|R|R|R| | |Y| |Y| |
+|Y|Y|Y| |R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | | | | | |
+|Y| | | | |R| |Y| |
+|R|R|R| | |Y| |Y| |
+|Y|Y|Y| |R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | | | |Y| |
+|Y| | | | |R| |Y| |
+|R|R|R| | |Y| |Y| |
+|Y|Y|Y| |R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | |R| |Y| |
+|Y| | | | |R| |Y| |
+|R|R|R| | |Y| |Y| |
+|Y|Y|Y| |R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | |R| |Y| |
+|Y| | | | |R| |Y| |
+|R|R|R| | |Y| |Y|Y|
+|Y|Y|Y| |R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | |R| |Y| |
+|Y| | | | |R| |Y| |
+|R|R|R| |R|Y| |Y|Y|
+|Y|Y|Y| |R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | |R| |Y| |
+|Y|Y| | | |R| |Y| |
+|R|R|R| |R|Y| |Y|Y|
+|Y|Y|Y| |R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | |R| |Y| |
+|Y|Y| | |R|R| |Y| |
+|R|R|R| |R|Y| |Y|Y|
+|Y|Y|Y| |R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | |R| |Y| |
+|Y|Y| | |R|R| |Y| |
+|R|R|R| |R|Y| |Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | |R| |Y| |
+|Y|Y| | |R|R| |Y|R|
+|R|R|R| |R|Y| |Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | |R| |Y| |
+|Y|Y|Y| |R|R| |Y|R|
+|R|R|R| |R|Y| |Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | |R| |Y| |
+|Y|Y|Y| |R|R| |Y|R|
+|R|R|R| |R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+| | | | | |R| |Y| |
+|Y|Y|Y| |R|R|Y|Y|R|
+|R|R|R| |R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+| | | | | |R| |Y| |
+|Y|Y|Y| |R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+|Y| | | | |R| |Y| |
+|Y|Y|Y| |R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+| | | | | | | | | |
+|Y| | | |R|R| |Y| |
+|Y|Y|Y| |R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+| | | | | | | | | |
+|Y| | | |R|R| |Y|Y|
+|Y|Y|Y| |R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+|R| | | | | | | | |
+|Y| | | |R|R| |Y|Y|
+|Y|Y|Y| |R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+|R| | | | | | | |Y|
+|Y| | | |R|R| |Y|Y|
+|Y|Y|Y| |R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+|R| | | | | | |R|Y|
+|Y| | | |R|R| |Y|Y|
+|Y|Y|Y| |R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+|R| | | | | | | |Y|
+|Y| | | |R|R| |Y|Y|
+|Y|Y|Y| |R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+|R| | | | | | | |Y|
+|Y|R| | |R|R| |Y|Y|
+|Y|Y|Y| |R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+|R| | | | | | | |Y|
+|Y|R| | |R|R|Y|Y|Y|
+|Y|Y|Y| |R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+|R| | | | | |R| |Y|
+|Y|R| | |R|R|Y|Y|Y|
+|Y|Y|Y| |R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+|R| | | | | |R| |Y|
+|Y|R| | |R|R|Y|Y|Y|
+|Y|Y|Y|Y|R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+|R|R| | | | |R| |Y|
+|Y|R| | |R|R|Y|Y|Y|
+|Y|Y|Y|Y|R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+|R|R| | | | |R| |Y|
+|Y|R| |Y|R|R|Y|Y|Y|
+|Y|Y|Y|Y|R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+|R|R| |R| | |R| |Y|
+|Y|R| |Y|R|R|Y|Y|Y|
+|Y|Y|Y|Y|R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+|R|R| |R| | |R| |Y|
+|Y|R|Y|Y|R|R|Y|Y|Y|
+|Y|Y|Y|Y|R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+|R|R|R|R| | |R| |Y|
+|Y|R|Y|Y|R|R|Y|Y|Y|
+|Y|Y|Y|Y|R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+|R|R|R|R| |Y|R| |Y|
+|Y|R|Y|Y|R|R|Y|Y|Y|
+|Y|Y|Y|Y|R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+|R|R|R|R|R|Y|R| |Y|
+|Y|R|Y|Y|R|R|Y|Y|Y|
+|Y|Y|Y|Y|R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+|R|R|R|R| |Y|R| |Y|
+|Y|R|Y|Y|R|R|Y|Y|Y|
+|Y|Y|Y|Y|R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+|R|R|R|R| | |R| |Y|
+|Y|R|Y|Y|R|R|Y|Y|Y|
+|Y|Y|Y|Y|R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+|R|R| |R| | |R| |Y|
+|Y|R|Y|Y|R|R|Y|Y|Y|
+|Y|Y|Y|Y|R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+|R|R|R|R| | |R| |Y|
+|Y|R|Y|Y|R|R|Y|Y|Y|
+|Y|Y|Y|Y|R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+|R|R|R|R| |Y|R| |Y|
+|Y|R|Y|Y|R|R|Y|Y|Y|
+|Y|Y|Y|Y|R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 2. Please enter column: 
+|R|R|R|R|R|Y|R| |Y|
+|Y|R|Y|Y|R|R|Y|Y|Y|
+|Y|Y|Y|Y|R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+Your move, player 1. Please enter column: 
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|R|Y|Y|R|R|Y|Y|Y|
+|Y|Y|Y|Y|R|R|Y|Y|R|
+|R|R|R|R|R|Y|R|Y|Y|
+|Y|Y|Y|Y|R|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|R|Y|R|Y|R|R|Y|R|
+|Y|Y|R|Y|R|Y|Y|R|R|
+|Y|Y|Y|R|R|R|Y|R|R|
+\-----------------/
+That's a tie. 
